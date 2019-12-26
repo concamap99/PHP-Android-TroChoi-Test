@@ -123,6 +123,16 @@ class NguoiChoiController extends Controller
         return response()->json(['success' => false, 'message' => 'Token is required']);
         
     }
+    public function PlayerHistory($id)
+    {
+        $playerhistory = LuotChoi::where('nguoi_choi_id',$id)->get();
+        if ( $playerhistory != null ) 
+            return response()->json([
+                'success'=>true,
+                'data'=>$playerhistory;
+            ]);
+        return response()->json(['success'=>false]);
+    }
     // public function DangNhap(Request $request)
     // {
     //     $thongtin = $request->only(['ten_dang_nhap','mat_khau']);

@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('lich-su-choi/{id}','API\NguoiChoiController@PlayerHistory');
 Route::get('linh-vuc','API\LinhVucController@index');
 Route::get('cau-hoi','API\CauHoiController@layDSCauHoi');
 Route::get('cau-hoi/{id}','API\CauHoiController@show');
