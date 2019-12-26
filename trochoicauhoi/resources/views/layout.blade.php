@@ -120,10 +120,10 @@
                                 </a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/linh-vuc">Danh sách lĩnh vực</a>
+                                        <a href="/linh-vuc"><i class="fas fa-atom"></i> Danh sách lĩnh vực</a>
                                     </li>
                                      <li>
-                                        <a href="/linh-vuc/thung-rac">Thùng rác</a>
+                                        <a href="/linh-vuc/thung-rac"><i class="fe-trash-2"></i> Thùng rác</a>
                                     </li>
                                 </ul>
                             </li>
@@ -132,33 +132,59 @@
                                 <a href="#"> <i class="la la-clone"></i>Câu hỏi <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/cau-hoi">Danh sách câu hỏi</a>
+                                        <a href="/cau-hoi"><i class="fas fa-atom"></i> Danh sách câu hỏi</a>
                                     </li>
                                     <li>
-                                        <a href="/cau-hoi/thung-rac">Thùng rác</a>
+                                        <a href="/cau-hoi/thung-rac"><i class="fe-trash-2"></i> Thùng rác</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="has-submenu">
-                                <a href="#"> <i class="la la-clone"></i>Người chơi <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="fe-users"></i>Người chơi <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/nguoi-choi">Danh sách người chơi</a>
+                                        <a href="/nguoi-choi"><i class="fas fa-atom"></i> Danh sách người chơi</a>
                                     </li>
                                     <li>
-                                        <a href="/nguoi-choi/thung-rac">Thùng rác</a>
+                                        <a href="/nguoi-choi/thung-rac"><i class="fe-trash-2"></i> Thùng rác</a>
                                     </li>
                                 </ul>
                             </li>
                              <li class="has-submenu">
-                                <a href="#"> <i class="la la-clone"></i>Gói Credit <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="fe-credit-card"></i>Gói Credit <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/goi-credit">Danh sách gói Credit</a>
+                                        <a href="/goi-credit"><i class="fas fa-atom"></i> Danh sách gói Credit</a>
                                     </li>
                                     <li>
-                                        <a href="/goi-credit/thung-rac">Thùng rác</a>
+                                        <a href="/goi-credit/thung-rac"><i class="fe-trash-2"></i> Thùng rác</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"> <i class="fe-settings"></i>Cấu hình <div class="arrow-down"></div></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="/cau-hinh/diem-cau-hoi"><i class="fas fa-atom"></i> Điểm câu hỏi</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cau-hinh/app"><i class="fas fa-atom"></i> App</a>
+                                    </li>
+                                    <li>
+                                        <a href="/goi-credit/thung-rac"><i class="fas fa-atom"></i> Trợ giúp</a>
+                                    </li>
+                                    <li class="has-submenu">
+                                       <a href="#"><i class="fe-trash-2"></i> Thùng rác <div class="arrow-down"></div></a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="">Điểm câu hỏi</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Trợ giúp</a>
+                                            </li>
+                                        </ul>
+
                                     </li>
                                 </ul>
                             </li>

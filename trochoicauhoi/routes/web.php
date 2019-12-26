@@ -103,4 +103,16 @@ Route::middleware('auth')->group(function(){
 		});
 		Route::get('/mua-credit/{id}','LichSuMuaCreditController@index')->name('ls-mua-credit');
 	});
+	Route::prefix('cau-hinh')->group(function(){
+		Route::prefix('app')->group(function(){
+			Route::get('','CauHinhController@CauHinhApp')->name('cauhinh.app');
+			Route::post('','CauHinhController@editCauHinhApp')->name('cauhinh.app.edit');
+		});
+		Route::prefix('diem-cau-hoi')->group(function(){
+			Route::get('','CauHinhController@CauHinhDiemCauHoi')->name('cauhinh.diem');
+			Route::get('\{id}','CauHinhController@showCauHinhDiemCauHoi')->name('cauhinh.diem.show');
+			Route::post('\{id}','CauHinhController@editCauHinhDiemCauHoi')->name('cauhinh.diem.edit');
+			Route::post('them-moi','CauHinhController@storeCauHinhDiemCauHoi')->name('cauhinh.diem.store');
+		});
+	});
 });

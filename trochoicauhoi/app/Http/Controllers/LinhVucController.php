@@ -100,8 +100,8 @@ class LinhVucController extends Controller
     }
     public function Delete($id)
     {
-        $ktRangBuoc = CauHoi::where('linh_vuc_id',$id)->get();
-        if( isset($ktRangBuoc) )
+        $ktRangBuoc = CauHoi::where('linh_vuc_id',$id)->get()->count();
+        if( $ktRangBuoc > 0 )
         {
             $demCauHoi = CauHoi::where('linh_vuc_id',$id)->get()->count();
             alert()->error('Xóa lĩnh vực thất bại !!','Vui lòng xóa '.$demCauHoi.' câu hỏi sử dụng lĩnh vực này');
